@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Digit Recognizer</title>
+    <link rel="stylesheet" href="/static/Styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SeeMyDigit</h1>
+
+        <div class="controls">
+            <button id="startCam">Start Camera</button>
+            <button id="stopCam">Stop Camera</button>
+            <button id="capture">Capture</button>
+            <label for="fileInput">Upload Image</label>
+            <input type="file" id="fileInput" accept="image/*" />
+            <button id="send">Send to Model</button>
+        </div>
+
+        <div class="panes">
+            <div class="pane">
+                <video id="video" autoplay playsinline></video>
+            </div>
+            <div class="pane">
+                <canvas id="preview" width="280" height="280"></canvas>
+            </div>
+        </div>
+
+        <div id="result">Result: <span id="pred">-</span></div>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>
